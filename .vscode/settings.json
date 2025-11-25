@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.h": "c",
+        "iostream": "cpp",
+        "text_encoding": "cpp",
+        "typeinfo": "cpp",
+        "cstdint": "cpp"
+    }
+}
