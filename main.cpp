@@ -56,7 +56,7 @@
 
 //------------------------------------------------------------------------------
 
-const uint64_t TEST_DCF77_FRAME = 0b00101001011100000010100010010010001000100110010001101001000;
+const uint64_t TEST_DCF77_FRAME             = 0b00101001011100000010100010010010001000100110010001101001000;
 const unsigned int INITIAL_ERROR_TIME_MS    = 3000;
 const unsigned int INITIAL_FRAME_START_MS   = 1800;
 const unsigned int BIT_0_PULSE_MS           = 100;
