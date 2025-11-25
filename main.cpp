@@ -61,8 +61,8 @@ const unsigned int INITIAL_ERROR_TIME_MS    = 3000;
 const unsigned int INITIAL_FRAME_START_MS   = 1800;
 const unsigned int BIT_0_PULSE_MS           = 100;
 const unsigned int BIT_1_PULSE_MS           = 200;
-const unsigned int BIT_TOTAL_MS             = 1000;
-const unsigned int MINUTE_MARKER_MS         = 850;
+const unsigned int BIT_TOTAL_MS             = 970;
+const unsigned int MINUTE_MARKER_MS         = 900;
 
 const float CARIER_FREQUENCY_HZ             = 77500.0f; 
 const unsigned int AMPLITUDE_LOW            = 50;    
@@ -112,7 +112,7 @@ static void modulate_dcf77(WORD dev, uint64_t dcf_frame)
             uint8_t bit_value = (dcf_frame >> bit_idx) & 1u;
 
             uint16_t pulse_duration_ms   = (bit_value == 0u) ? BIT_0_PULSE_MS : BIT_1_PULSE_MS;
-            uint16_t silence_duration_ms = 970 - pulse_duration_ms;
+            uint16_t silence_duration_ms = BIT_TOTAL_MS - pulse_duration_ms;
 
             std::cout << "Transmitting bit " << static_cast<int>(bit_value)
                       << " (pulse " << pulse_duration_ms << " ms, silence "

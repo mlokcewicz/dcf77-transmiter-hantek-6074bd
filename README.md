@@ -6,7 +6,7 @@ DCF77 signal generator based on **Hantek 6074BD** oscilloscope SDK (`HTHardDll`,
 - Device discovery (`dsoHTSearchDevice`)
 - Device connection (`dsoHTDeviceConnect`)
 - Hardware initialization (`dsoInitHard`)
-- DCF77 carier generation with current system time info added
+- DCF77 carier generation with selected time frame
 
 **Hardware:**
 - Hantek 6074BD USB Oscilloscope
